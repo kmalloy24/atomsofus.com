@@ -2,9 +2,15 @@
 ############################### Banner ##############################
 banner:
   enable: true
+<<<<<<< HEAD
   bg_image: "images/slider-bg.jpg"
   bg_overlay: true
   title: "A Digital Marketing <br/> & Design Agency"
+=======
+  bg_image: "images/slider-bg.webp"
+  bg_overlay: true
+  title: "Atoms of Us <br/> Chan & Kyle"
+>>>>>>> fbb727d (reset files w/ new theme)
   content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
   button:
     enable: true
