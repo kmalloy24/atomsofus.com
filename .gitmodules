@@ -2,6 +2,4 @@
 	path = atomsofusblog/public
 	url = https://github.com/kmalloy24/atomsofus.github.io.git
 	branch = main
-[submodule "atomsofusblog/themes/themes/hugo-theme-stack"]
-	path = atomsofusblog/themes/themes/hugo-theme-stack
-	url = https://github.com/CaiJimmy/hugo-theme-stack/
+
