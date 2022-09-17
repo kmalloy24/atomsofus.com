@@ -7,7 +7,7 @@ draft: false
 
 ########################### about service #############################
 about:
-  enable : true
+  enable : false
   title : "Creative UX/UI Design Agency"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate soluta corporis odit, optio
           cum! Accusantium numquam ab, natus excepturi architecto earum ipsa aliquam, illum, omnis rerum, eveniet
@@ -22,7 +22,7 @@ about:
 
 ########################## featured service ############################
 featured_service:
-  enable : true
+  enable : false
   service_item:
     # featured service item loop
     - name : "Interface Design"
@@ -45,7 +45,7 @@ featured_service:
 
 ############################# Service ###############################
 service:
-  enable : true
+  enable : false
   title : "Our Services"
   description : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
           blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
@@ -92,6 +92,6 @@ service:
 
 ############################# call to action #################################
 cta:
-  enable : true
+  enable : false
   # call to action content comes from "_index.md"
 ---
