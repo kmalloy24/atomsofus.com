@@ -2,98 +2,62 @@
 # favicon
 favicon = "images/favicon.png"
 # logo
-logo = "images/logo.png"
-# use `px` or `x` with logo_width, example: "100px".
+logo = "images/logo.svg"
+# use `x` with logo_width, example: "100x".
 # Note: logo_width is not work with .svg file
-logo_width = "200px"
+logo_width = "150px"
 # logo text will only show when logo is missing.
-logo_text = "Airspace"
+logo_text = "Atoms of Us"
 # navbar fixed to top
-navbar_fixed = false
+navbar_fixed = true
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
-author = "Themefisher"
-image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
-# Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
-address_descriptors = false
+description = "Vanlife 🚐 | Travel 🏞️ | Hiking 🥾 | Plant-Based 🌿 | Environmentalism ♻️🌎"
+author = "AOU"
+image = "images/logo.svg" # this image will be used as fallback if a page has no image of its own
 # contact info
-phone = "0124857985320"
-email = "demo@email.com"
-location = """
-**Themefisher**  
-North Main Street  
-Brooklyn, New South Wales  
-Australia
-"""
+# address = "Somewhere in a van"
+# mobile = "+211234565523"
+# email = "info@email.com"
+# contact form action
+contact_form_action = "https://formspree.io/f/xyyvearb" # contact form works with https://formspree.io
+# search
+search = true
+
+# featured post title
+featured_post_title = "Featured Posts"
+recent_post_title = "Recent Posts"
+mainSections = ["blog"]
+# about widget content
+about_widget_content = "“The fact remains that man has unprecedented control over the world and everything in it. And so, whether he likes it or not, what happens next is very largely up to him.” - David Attenborough (From 'Life on Earth' 1979)"
+# footer content
+footer_content = "Copyright © 2022 Atoms of Us <br/> Find an issue with the page? Let us know on [Github](https://github.com/kmalloy24/AOU-Blog/)!"
 # copyright
-copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/) <br/> Powered by [Hugo](https://gohugo.io/) & [Github Pages](https://pages.github.com/)"
+
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= ""
-# google tag manager, see https://developers.google.com/tag-manager/
-google_tag_manager = "" # example: G-XXXXXXXXXX
-# recaptch v3 site key
-recaptcha_site_key = "xxx-xxxxxxxxxxxxxxxxxxxxxxxx"
-
-[contact.form]
-enable = true
-# Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
-use_netlify = true
-# Whether to use recaptch v3 in form
-use_recaptcha = true
-# Form action
-## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
-## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
-action = "#"
-# Image on custom success page `/message_sent.html`
-success_image = "images/paper-plane.svg"
 
 
 # Preloader
 [preloader]
-enable = true
+enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
-# Navigation button
-[navigation_button]
+# Banner
+[banner]
 enable = true
-label = "get a quote"
-link = "contact"
+title_large = "Welcome **!**"
+title_small = "We are Chan & Kyle,"
+image = "images/banner.webp"
+background_image = "/images/banner-bg-shape.svg"
+content = "& these are the atoms of us: <br/> Vanlife 🚐 | Travel 🏞️ | Hiking 🥾 | Plant-Based 🌿 | Environmentalism ♻️🌎"
+button_label = "Our Story"
+button_link = "about/"
 
-
-# matomo tracking: see https://matomo.org/
-[matomo]
-enable = false
-url = "" # your matomo url
-id = "" # your matomo id
-
-# baidu analytics: see https://tongji.baidu.com/
-[baidu]
-enable = false
-analytics_id = "" # Your ID
-
-# plausible analytics: see https://plausible.io/
-[plausible]
-enable = false
-domain = "" # yourdomain.com
-
-# counter analytics: see https://counter.dev/setup.html
-[counter]
-enable = false
-username = "" # your username
-
-# site verifications
-[site_verification]
-google = "" # Your verification code
-bing = "" # Your verification code
-baidu = "" # Your verification code
-
-# google map
-[gmap]
-enable = true
-gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
+# Advertise
+[advertisement]
+image = "images/promotion.png"
+link = "https://gethugothemes.com/"
 
 # cookies
 [cookies]
@@ -104,31 +68,40 @@ button = "I Accept"
 
 ######################## sidebar widgets #########################
 [widgets]
-sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
-# available widget : categories,tags,recent-post
+sidebar = ["categories", "about", "recent-post"]
+# available widget : about,categories,newsletter,recent-post
+
+
+# Subscription
+[subscription]
+enable = false
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
 
 ############################# social site ########################
 [[social]]
+title = "instagram"
+icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://instagram.com/atoms_of_us"
+
+[[social]]
 title = "facebook"
-icon = "fab fa-facebook"  # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
+link = "https://www.facebook.com/atomsofus"
 
 [[social]]
 title = "twitter"
-icon = "fab fa-twitter"  # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/atomsofus"
 
 [[social]]
-title = "instagram"
-icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+title = "pinterest"
+icon = "fab fa-pinterest" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.pinterest.com/atomsofus/"
 
 [[social]]
-title = "github"
-icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
-
-[[social]]
-title = "linkedin"
-icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+title = "youtube"
+icon = "fab fa-youtube" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.youtube.com/channel/UC68ue2_WrPT9ELstWcReSkg"
