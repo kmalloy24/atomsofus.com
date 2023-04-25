@@ -1,5 +1,5 @@
 [submodule "atomsofusblog/public"]
 	path = atomsofusblog/public
-	url = https://github.com/kmalloy24/atomsofus.github.io.git
+	url = https://github.com/kmalloy24/atomsofus.com-deploy
 	branch = main
 
